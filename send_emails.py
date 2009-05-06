@@ -9,6 +9,8 @@ from couchdb import ResourceConflict, Server
 
 server = Server('http://127.0.0.1:5984')
 
+# TODO this config info should be loaded from the design doc, and re-loaded
+# on-the-fly
 RECIPIENTS = {
     'elyservice': {
         'subject': 'Message sent through ElyService.com',
